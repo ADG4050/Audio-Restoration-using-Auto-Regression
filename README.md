@@ -33,7 +33,7 @@ Describe here how you have designed your code, e.g. a main script/routine that c
 
 1. For the median filter, different lengths were explored to test the effectiveness of the restoration. In particular, XXXX were tested and XXX was observed to deliver the lowest MSE, as shown in the figure below.
 
-<img src="MedianFilter_MSEvsLength.png" width="350">
+<img src="C:\Users\aduttagu\Assignment_2\Audio-Restoration\MedianFilter_MSEvsLength.png" width="350">
 
 The restored waveform <output_medianFilter.wav> with the optimal filter length is given below:
 
