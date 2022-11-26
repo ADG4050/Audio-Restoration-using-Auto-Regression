@@ -9,12 +9,16 @@ from time import sleep
 from tqdm import tqdm
 import time
 import unittest
+from playsound import playsound
 
 # get the start time
 st = time.time()
 
 samplerate2, data_clean = wavfile.read('clean.wav')
 samplerate1, data = wavfile.read('degraded.wav')
+
+#playsound('degraded.wav')
+#print('playing degraded sound using  playsound')
 
 # data = data - np.mean(data)
 
@@ -49,22 +53,7 @@ wind_length = 3
 
 
 def median_filter(inp_sig, wind_length):
-    # middleIndex2 = int((len(inp_sig) - 1)/2)
-    # if(inp_sig[0] < 0):      
-    #     if(inp_sig[0] < inp_sig[-1]):
-    #         inp_sig[middleIndex2] = inp_sig[-1]
-    #         arr1 = inp_sig
-    #     else:
-    #         inp_sig[middleIndex2] = inp_sig[0]
-    #         arr1 = inp_sig
-    # elif(inp_sig[-1] < 0):
-    #     if(inp_sig[0] < inp_sig[-1]):
-    #         inp_sig[middleIndex2] = inp_sig[-1]
-    #         arr1 = inp_sig
-    #     else:
-    #         inp_sig[middleIndex2] = inp_sig[0]
-    #         arr1 = inp_sig
-    # else:
+
     # zero padding added as per window length
     pad = int((wind_length - 1)/2)
     inp_sig2 = np.pad(inp_sig, (pad, pad), 'constant',
@@ -82,7 +71,7 @@ def median_filter(inp_sig, wind_length):
     return (arr1)
 
 def m_s_e(inp1, inp2):
-    mse = ((np.sum(np.square(inp1 - inp2)) / len(inp1)))/1000
+    mse = np.sum(np.square(inp1 - inp2)) / (len(inp1) * len(inp2))
     return mse
 
 def main(data, detection, wind_length):
@@ -100,15 +89,20 @@ def main(data, detection, wind_length):
         restored = data2
     return restored
 
-#write("restored_mf.wav", samplerate1, restored)
+
+
+
 
 
 for i in tqdm(range(100)):
     restored = main(data, detection, wind_length)
     sleep(0.1)
 
+
+#write("restoredmf.wav", samplerate1, restored)
+
 timep = np.linspace(0.0, len(restored), restored.shape[0])
-data_clean2 = (data_clean * 2) 
+data_clean2 = (data_clean / 2) 
 plt.subplot(3,1,3)
 plt.plot(timep, restored)
 plt.title('restored signal')
@@ -117,7 +111,8 @@ plt.xlabel("Time[s]")
 plt.ylabel("Amplitude")
 plt.show()
 
-
+#playsound('restoredmf.wav')
+#print('playing restored sound using  playsound')
 
 mse2 = m_s_e(data_clean2, restored) 
 print('Mean Squared Error between clean and restored audio:', mse2)
