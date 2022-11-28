@@ -57,11 +57,17 @@ A graph is plotted for the restored signal and compared with the clean signal. T
 
 ## Installation and Execution
 
-1)The pipreqs txt file available in the Github provides all the versions and libraries of the import files used in the project.
+1)The pipreqs (requirements.txt) file available in the Github provides all the versions and libraries of the import files used in the project. However, the versions are still mentioned below :-
+i) matplotlib==3.6.2
+ii) numpy==1.23.4
+iii) playsound==1.2.2
+iv) scipy==1.9.3
+v) tqdm==4.64.1
+
 
 2)After installing all the import packages, the main file and cubic spline file can be run using the command in the CMD terminal
-python main.py
-python cubspl_filter.py
+i) python main.py
+ii) python cubspl_filter.py
 
 3) The wavwrite file and play audio file is commented as the restored files are already inside the Github. Both the commands can be uncommented for its respective functions to run. 
 
@@ -91,14 +97,14 @@ Moreover a graph is plotted to visualise the MSE vs Window length
 
 In particular, the clean, degraded and restored signals were plotted and compared.
 
-<img src="compmedfil.PNG" width="400">
+<img src="compmedfil.PNG" width="750">
 
 
 
 
 2. The output waveform using the cubic splines is also shown below, 
 
-<img src="compcubspl.PNG" width="400">
+<img src="compcubspl.PNG" width="750">
 
 
 3. Comparing the two different interpolation methods, we notice that cubic slpines achieves a lower MSE than Median filter. The runtime of Cubic slpines is also less compared to Median Filter with window = 3, which has the minimum mse. The below graphs demonstates the findings
