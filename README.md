@@ -101,7 +101,11 @@ In particular, the clean, degraded and restored signals were plotted and compare
 <img src="compcubspl.PNG" width="300">
 
 
-3. Comparing the two different interpolation methods, we notice that cubic slpines achieves a lower MSE than Median filter. The runtime of Cubic slpines is also less compared to Median Filter with window = 3, which has the minimum mse. 
+3. Comparing the two different interpolation methods, we notice that cubic slpines achieves a lower MSE than Median filter. The runtime of Cubic slpines is also less compared to Median Filter with window = 3, which has the minimum mse. The below graphs demonstates the findings
+
+<img src="Table2.PNG" width="175">
+<img src="Table3.PNG" width="175">
+
 
 After listening to the two restored files, we notice that all the clicks have been removed. 
 Hence we conclude that both the methods work for audio restoration, with Cubic spline edging a better accuracy and runtime. 
