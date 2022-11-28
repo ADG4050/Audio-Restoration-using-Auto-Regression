@@ -82,29 +82,29 @@ Finally, the MSE for the Cubic Spline and Median Filter provides the accuracy of
 1. For the median filter, different lengths were explored to test the effectiveness of the restoration. 
 A Table is made to note the different MSE's for different window length.
 
-<img src="Table.PNG" width="250">
+<img src="Table.PNG" width="350">
 
 Moreover a graph is plotted to visualise the MSE vs Window length
 
-<img src="windowvsmse.PNG" width="300">
+<img src="windowvsmse.PNG" width="400">
 
 
 In particular, the clean, degraded and restored signals were plotted and compared.
 
-<img src="compmedfil.PNG" width="300">
+<img src="compmedfil.PNG" width="400">
 
 
 
 
 2. The output waveform using the cubic splines is also shown below, 
 
-<img src="compcubspl.PNG" width="300">
+<img src="compcubspl.PNG" width="400">
 
 
 3. Comparing the two different interpolation methods, we notice that cubic slpines achieves a lower MSE than Median filter. The runtime of Cubic slpines is also less compared to Median Filter with window = 3, which has the minimum mse. The below graphs demonstates the findings
 
-<img src="Table2.PNG" width="175">
-<img src="Table3.PNG" width="175">
+<img src="Table2.PNG" width="400">
+<img src="Table3.PNG" width="400">
 
 
 After listening to the two restored files, we notice that all the clicks have been removed. 
