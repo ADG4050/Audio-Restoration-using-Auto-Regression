@@ -1,6 +1,6 @@
 #Author : ADG4050
 # This code was developed for purely academic purposes by (ADG4050) as part of the module of Computational Methods (5c22) in Trinity College Dublin
-#  This file is for Cubic Splines Interpolation, For main.py containaining Median Filter, refer main.py
+# This file is for Cubic Splines Interpolation, For main.py containaining Median Filter, refer main.py
 
 
 # Step 1 import all neccessary modules

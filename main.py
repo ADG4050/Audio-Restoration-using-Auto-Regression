@@ -18,14 +18,13 @@ from playsound import playsound  # Playsound imports
 # Start time for computing the execution time
 st = time.time()
 
-
 # Step 2 : Import clean and degraded audios
 samplerate2, data_clean = wavfile.read('clean.wav')
 samplerate1, data = wavfile.read('degraded.wav')
 
 # Playing the degraded audio
-#playsound('degraded.wav')
-#print('playing degraded sound using  playsound')
+playsound('degraded.wav')
+print('playing degraded sound using  playsound')
 
 
 # Step 3 : Preparing the graphs from clean and degraded audio's but holding it for final subplot
@@ -54,7 +53,7 @@ mat_list = list(mat.items())
 detection = np.asarray(mat_list)[3][1][0]
 
 # Step 5 : Initialising the window length parameter
-wind_length = 35
+wind_length = 3
 
 
 # Step 6 : Median filter
@@ -117,6 +116,7 @@ for i in tqdm(range(100)):
     sleep(0.1)
 
 
+
 # Step 9 : writing out the restored audio (uncomment)
 #write("restoredmf.wav", samplerate1, restored)
 
@@ -134,8 +134,8 @@ plt.show()
 
 
 # Step 11 : Playing the restorted audio
-#playsound('restoredmf.wav')
-#print('playing restored sound using  playsound')
+playsound('restoredmf.wav')
+print('playing restored sound using  playsound')
 
 
 # Step 12 : Calculation of MSE
@@ -165,9 +165,9 @@ class testcode(unittest.TestCase):
         data3 = data
         for i in index[0]:
             cons = int((wind_length - 1) / 2)
-            dataset2 = data3[(i-(cons)): (i+(cons))]
+            dataset2 = data3[(i-(cons)): (i+(cons+1))]
             output2 = scipy.signal.medfilt(dataset2, kernel_size=wind_length)
-            data3[(i-(cons)): (i+(cons))] = output2
+            data3[(i-(cons)): (i+(cons+1))] = output2
         ckc2 = np.array_equal(restored, data3)
 
 
