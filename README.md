@@ -6,7 +6,7 @@ Refer the Report provided, which describes the algorithm and the MATLAB code des
 seconds clip, which is then degraded artificially and restored again. The restored clip is then compared to the original clean clip and different performance analysis charts, graphs and tables
 are plotted. 
 
-Report : [https://github.com/ADG4050/Audio-Restoration-MATLAB/blob/main/A%20Duttagupta_AR_Report.pdf]
+Report : https://github.com/ADG4050/Audio-Restoration-MATLAB/blob/main/A%20Duttagupta_AR_Report.pdf
 
 Installation
 1) MATLAB : Version R2021b
@@ -15,5 +15,3 @@ Installation
 4) Run the MATALB demo.m file through Editor and check graphs
 5) Observe the values thoeugh the command section
 6) To play the audios, execute the command in the command section "sound (restored, Fs)" for restored.wav
-
- 
