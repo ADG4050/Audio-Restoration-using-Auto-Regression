@@ -92,7 +92,7 @@ A Table is made to note the different MSE's for different window length.
 
 Moreover a graph is plotted to visualise the MSE vs Window length
 
-<img src="windowvsmse.PNG" width="400">
+<img src="windowvsmse.PNG" width="600">
 
 
 In particular, the clean, degraded and restored signals were plotted and compared.
