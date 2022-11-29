@@ -15,3 +15,7 @@ Installation
 4) Run the MATALB demo.m file through Editor and check graphs
 5) Observe the values thoeugh the command section
 6) To play the audios, execute the command in the command section "sound (restored, Fs)" for restored.wav
+
+
+**LISCENSE**
+The Following Code has been licensed from MIT license
