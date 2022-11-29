@@ -103,7 +103,7 @@ For more details check [here](https://github.com/bndr/pipreqs)
 **Unittests**
 
 Two Unittests are checked in the median filter program to confirm their functionality.
-1) Check Length: The length of the signal data array of the clean, degraded, and restored arrays are checked. The test is passed, if all the lengths are the same.
+1) Check Length: The length of the signal data array of the clean, degraded, and restored [aud](degraded.wav) arrays are checked. The test is passed, if all the lengths are the same.
 2) Inbuilt Function = designed Function: The designed function returned values are compared with the values obtained from the Inbuilt Function from Scipy. If both values are the same, the test is passed.
 
 Finally, the MSE for the Cubic Spline and Median Filter provides the accuracy of the filters. However, for the median filter, it is observed that changing window lengths leads to different MSEs.
