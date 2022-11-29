@@ -3,13 +3,12 @@ After a successful audio restoration through Auto - regression method, we are he
 
 <img src="https://media.giphy.com/media/L9GEfudkrIDQjcWtpi/giphy.gif" width="600">
 
-Before we start, lets hear the degraded and restored output to convince you it really works.
+Before we start, lets hear the degraded and restored output to convince you it really works. THe links are below:
 
-1. Clean original Audio : [Click here for clean audio](clean.webm)
-2. Degraded Audio with Clicks : [Click here for degraded audio](degraded.webm)
-3. Restored Audio (Median Filter) : [Click here for restored (median filter) audio](restoredmf.webm)
-4. Restored Audio (Cubic Splines) : [Click here for restored (Cubic Splines) audio](restoredcs.webm)
-
+1. Clean original Audio : [clean.webm](https://user-images.githubusercontent.com/114697469/204659412-ef3243ce-9c6c-4f7b-8e22-4e99e1c7dd6c.webm)
+2. Degraded Audio with Clicks : [degraded.webm](https://user-images.githubusercontent.com/114697469/204659414-4bd289ad-4c1a-4db6-b0a1-66a520d5f245.webm)
+3. Restored Audio (Median Filter) : [restoredmf.webm](https://user-images.githubusercontent.com/114697469/204659409-e0b9c806-8a63-49d2-a907-e142fbfb8cf0.webm)
+4. Restored Audio (Cubic Splines) : [restoredcs.webm](https://user-images.githubusercontent.com/114697469/204659407-453d561c-360d-465d-a545-d12d968b4a7b.webm)
 
 ## Table of Contents
 1. [High-level Description of the project](#my-first-title)
