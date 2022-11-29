@@ -152,6 +152,7 @@ This code was developed for purely academic purposes by (ADG4050) as part of the
 
 The following resources were analysed for the same:
 - Lecture Modules by Dr Angeliki Katsenou
+- Scipy Library [https://scipy.org/]
 
 
 
