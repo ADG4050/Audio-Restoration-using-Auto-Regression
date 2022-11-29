@@ -21,13 +21,11 @@ I) MEDIAN FILTER INTERPOLATION
 The Median Filter Interpolation assignment is started by importing the detection file (A .mat file which contains an array of 0's and 1's, with 1's denoting all the click locations) from MATLAB and reading it for application of the median filter interpolation method. The other input parameter is the window length (A window of digital data upon which the median functionality will be performed). The window length size cannot be even, always has to be odd and an error will be displayed if an even window size is selected.
 
 The output of the function returns the restored audio data without clicks. Inside the main function, we also call the designed median filter function to remove the clicks. The median filter function works in the following order
-1) It selects a window of data around the clicks
-
-    
+1) It selects a window of data around the clicks   
     ```
     Data = [1,2000,3,4,5,6,7,8,9]
     suppose window = 3, click data = 2000
-    Window = [1,2000,3]
+    Window = [1,2000,3]    
 2) It adds a zero pad wrapping over the window so that all values are considered for the median selection.
 
     ```
@@ -151,11 +149,5 @@ Hence we conclude that both the methods work for audio restoration, with Cubic s
 This code was developed for purely academic purposes by (ADG4050) as part of the module of Computational Methods (5c22) in Trinity College Dublin
 
 The following resources were analysed for the same:
-- Lecture Modules by Dr Angeliki Katsenou
+- Lecture Modules by Dr Angeliki Katsenou [https://angkats.github.io/] 
 - Scipy Library [https://scipy.org/]
-
-
-
-
-
-
