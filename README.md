@@ -3,6 +3,14 @@ After a successful audio restoration through Auto - regression method, we are he
 
 <img src="https://media.giphy.com/media/L9GEfudkrIDQjcWtpi/giphy.gif" width="600">
 
+Before we start, lets hear the degraded and restored output to convince you it really works.
+
+1. Clean original Audio : [Click here for clean audio](clean.webm)
+2. Degraded Audio with Clicks : [Click here for degraded audio](degraded.webm)
+3. Restored Audio (Median Filter) : [Click here for restored (median filter) audio](restoredmf.webm)
+4. Restored Audio (Cubic Splines) : [Click here for restored (Cubic Splines) audio](restoredcs.webm)
+
+
 ## Table of Contents
 1. [High-level Description of the project](#my-first-title)
 2. [Installation and Execution](#my-second-title)
@@ -103,7 +111,7 @@ For more details check [here](https://github.com/bndr/pipreqs)
 **Unittests**
 
 Two Unittests are checked in the median filter program to confirm their functionality.
-1) Check Length: The length of the signal data array of the clean, degraded, and restored [aud](degraded.wav) arrays are checked. The test is passed, if all the lengths are the same.
+1) Check Length: The length of the signal data array of the clean, degraded, and restored arrays are checked. The test is passed, if all the lengths are the same.
 2) Inbuilt Function = designed Function: The designed function returned values are compared with the values obtained from the Inbuilt Function from Scipy. If both values are the same, the test is passed.
 
 Finally, the MSE for the Cubic Spline and Median Filter provides the accuracy of the filters. However, for the median filter, it is observed that changing window lengths leads to different MSEs.
