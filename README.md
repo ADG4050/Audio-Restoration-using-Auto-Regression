@@ -32,7 +32,8 @@ The output of the function returns the restored audio data without clicks. Insid
     ```
     Data = [1,2000,3,4,5,6,7,8,9]
     suppose window = 3, click data = 2000
-    Window = [1,2000,3]    
+    Window = [1,2000,3]  
+
 2) It adds a zero pad wrapping over the window so that all values are considered for the median selection.
 
     ```
@@ -107,7 +108,7 @@ For more details check [here](https://github.com/bndr/pipreqs)
 
 ## Methodology and Results
 
-**Unittests**
+**Unit tests**
 
 Two Unittests are checked in the median filter program to confirm their functionality.
 1) Check Length: The length of the signal data array of the clean, degraded, and restored arrays are checked. The test is passed, if all the lengths are the same.
