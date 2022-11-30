@@ -17,7 +17,9 @@ Installation
 6) To play the audios, execute the command in the command section "sound (restored, Fs)" for restored.wav
 
 Clean Original Audio : [clean.webm](https://user-images.githubusercontent.com/114697469/204786663-77cae933-598b-4386-b442-cd5a9910b0e4.webm)
+
 Degraded Audio: [degraded.webm](https://user-images.githubusercontent.com/114697469/204786665-90e0d035-3c02-4bfc-933a-dd88171bad9a.webm)
+
 Restored Audio: [restored.webm](https://user-images.githubusercontent.com/114697469/204786659-71b30578-0f85-420f-83ea-8bbae8aa2465.webm)
 
 **LISCENSE**
