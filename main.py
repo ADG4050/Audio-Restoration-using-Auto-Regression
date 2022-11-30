@@ -44,7 +44,7 @@ plt.title('degraded signal')
 plt.subplots_adjust(hspace=0.5)
 plt.xlabel("Time[s]")
 plt.ylabel("Amplitude")
-# plt.show()
+
 
 
 # Step 4 : Importing the Detection file (Array of clicks [0,1]) from MATALB
